@@ -6,7 +6,7 @@ from graphic_arts.start_game_banner import run_screensaver
 
 
 def attack(char_name: str, char_class: str) -> str:
-    """Counting attack if chosen."""
+    """Count attack if chosen."""
     if char_class == 'warrior':
         return (f'{char_name} нанёс урон противнику, равный '
                 f'{5 + randint(3, 5)}')
@@ -19,7 +19,7 @@ def attack(char_name: str, char_class: str) -> str:
 
 
 def defence(char_name: str, char_class: str) -> str:
-    """Counting defence if chosen."""
+    """Count defence if chosen."""
     if char_class == 'warrior':
         return (f'{char_name} блокировал {10 + randint(5, 10)} ед. урона')
     if char_class == 'mage':
@@ -29,7 +29,7 @@ def defence(char_name: str, char_class: str) -> str:
 
 
 def special(char_name: str, char_class: str) -> str:
-    """Counting special skill if chosen."""
+    """Count special skill if chosen."""
     if char_class == 'warrior':
         return (f'{char_name} применил специальное умение '
                 f'«Выносливость {80 + 25}»')
